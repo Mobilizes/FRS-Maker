@@ -41,7 +41,7 @@
       "Jam": 1,
       "Default Rating": 10,
       "Rating": 10,
-      "Jumlah Murid": 40,
+      "Jumlah Murid": 42,
       "Max Murid": 70
     },
     {
@@ -143,6 +143,107 @@
       "Default Rating": 7,
       "Rating": 0,
       "Jumlah Murid": 30,
+      "Max Murid": 30
+    }
+  ],
+  "Otomata": [
+    {
+      "Kode": "A",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 1,
+      "Jam": 1,
+      "Default Rating": 8,
+      "Rating": 8,
+      "Jumlah Murid": 20,
+      "Max Murid": 30
+    },
+    {
+      "Kode": "B",
+      "Nama Dosen": "Victor Hariadi, S.Si, M.Kom",
+      "Inisial": "VH",
+      "Hari": 1,
+      "Jam": 2,
+      "Default Rating": 10,
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
+    },
+    {
+      "Kode": "C",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 1,
+      "Jam": 2,
+      "Default Rating": 8,
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
+    },
+    {
+      "Kode": "D",
+      "Nama Dosen": "Victor Hariadi, S.Si, M.Kom",
+      "Inisial": "VH",
+      "Hari": 1,
+      "Jam": 3,
+      "Default Rating": 10,
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
+    },
+    {
+      "Kode": "E",
+      "Nama Dosen": "Bilqis + Pak Ilham",
+      "Inisial": "BA-IG",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 5,
+      "Rating": 5,
+      "Jumlah Murid": 2,
+      "Max Murid": 30
+    },
+    {
+      "Kode": "F",
+      "Nama Dosen": "Victor + Hilmil",
+      "Inisial": "VH-HM",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 10,
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
+    },
+    {
+      "Kode": "G",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 3,
+      "Jam": 1,
+      "Default Rating": 8,
+      "Rating": 8,
+      "Jumlah Murid": 0,
+      "Max Murid": 30
+    },
+    {
+      "Kode": "H",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 2,
+      "Jam": 1,
+      "Default Rating": 0,
+      "Rating": 0,
+      "Jumlah Murid": 5,
+      "Max Murid": 30
+    },
+    {
+      "Kode": "K",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 4,
+      "Jam": 2,
+      "Default Rating": 8,
+      "Rating": 8,
+      "Jumlah Murid": 15,
       "Max Murid": 30
     }
   ],
@@ -323,107 +424,6 @@
       "Default Rating": 7,
       "Rating": 0,
       "Jumlah Murid": 30,
-      "Max Murid": 30
-    }
-  ],
-  "Otomata": [
-    {
-      "Kode": "A",
-      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
-      "Inisial": "AW",
-      "Hari": 1,
-      "Jam": 1,
-      "Default Rating": 8,
-      "Rating": 8,
-      "Jumlah Murid": 20,
-      "Max Murid": 30
-    },
-    {
-      "Kode": "B",
-      "Nama Dosen": "Victor Hariadi, S.Si, M.Kom",
-      "Inisial": "VH",
-      "Hari": 1,
-      "Jam": 2,
-      "Default Rating": 10,
-      "Rating": 0,
-      "Jumlah Murid": 30,
-      "Max Murid": 30
-    },
-    {
-      "Kode": "C",
-      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
-      "Inisial": "AW",
-      "Hari": 1,
-      "Jam": 2,
-      "Default Rating": 8,
-      "Rating": 0,
-      "Jumlah Murid": 30,
-      "Max Murid": 30
-    },
-    {
-      "Kode": "D",
-      "Nama Dosen": "Victor Hariadi, S.Si, M.Kom",
-      "Inisial": "VH",
-      "Hari": 1,
-      "Jam": 3,
-      "Default Rating": 10,
-      "Rating": 0,
-      "Jumlah Murid": 30,
-      "Max Murid": 30
-    },
-    {
-      "Kode": "E",
-      "Nama Dosen": "Bilqis + Pak Ilham",
-      "Inisial": "BA-IG",
-      "Hari": 2,
-      "Jam": 2,
-      "Default Rating": 5,
-      "Rating": 5,
-      "Jumlah Murid": 2,
-      "Max Murid": 30
-    },
-    {
-      "Kode": "F",
-      "Nama Dosen": "Victor + Hilmil",
-      "Inisial": "VH-HM",
-      "Hari": 2,
-      "Jam": 2,
-      "Default Rating": 10,
-      "Rating": 0,
-      "Jumlah Murid": 30,
-      "Max Murid": 30
-    },
-    {
-      "Kode": "G",
-      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
-      "Inisial": "AW",
-      "Hari": 3,
-      "Jam": 1,
-      "Default Rating": 8,
-      "Rating": 8,
-      "Jumlah Murid": 0,
-      "Max Murid": 30
-    },
-    {
-      "Kode": "H",
-      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
-      "Inisial": "AW",
-      "Hari": 2,
-      "Jam": 1,
-      "Default Rating": 0,
-      "Rating": 0,
-      "Jumlah Murid": 5,
-      "Max Murid": 30
-    },
-    {
-      "Kode": "K",
-      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
-      "Inisial": "AW",
-      "Hari": 4,
-      "Jam": 2,
-      "Default Rating": 8,
-      "Rating": 8,
-      "Jumlah Murid": 15,
       "Max Murid": 30
     }
   ],

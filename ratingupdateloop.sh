@@ -1,12 +1,13 @@
-#!/usr/bin/bash
+#!/usr/bin/zsh
 
 while true; do
   python3 ratingUpdate.py
-  printf '\033[3J'
+  clear && printf '\e[3J'
+  zle && zle .reset-prompt && zle -R
   jq -r '
     to_entries[] 
     | ("\n" + .key),
-      (.value[] | [.Kode, ."Nama Dosen", ."Jumlah Murid", ."Max Murid"] | @tsv)
+      (.value[] | [.Kode, ."Nama Dosen", ."Jumlah Murid", ."Max Murid", ."Rating"] | @tsv)
   ' jadwal.json | column -t -s $'\t'
   date
   sleep 15

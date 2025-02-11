@@ -3,6 +3,7 @@ import requests
 import pandas as pd
 import json
 import os
+import time
 from dotenv import load_dotenv
 
 url = "https://akademik.its.ac.id/list_frs.php"
@@ -15,6 +16,10 @@ session.cookies.setdefault('PHPSESSID', os.getenv("TOKEN"))
 
 # get data
 response = session.get(url)
+while response.status_code != 200:
+    print("Failed to get response! Retrying...")
+    time.sleep(1)
+    response = session.get(url)
 soup = BeautifulSoup(response.text, 'lxml')
 
 rows = soup.find_all('table', class_='FilterBox')
@@ -105,15 +110,16 @@ for i, abbr in enumerate(abbreviation):
 
 for matkul in dataMKsendiri.iterrows():
     matkul = matkul[1]
-    nama_mk = matkul["nama_mk"]
+    nama_mk = matkul["nama_mk"].strip()
     if nama_mk not in courses:
         continue
     abbr = abbreviation[courses.index(nama_mk)]
     kelas = matkul["kelas"]
 
     for j in json_data[abbr]:
-        if j["Kode"] == kelas:
-            j["Rating"] = 0
+        j["Rating"] = 0
+        if str(j["Kode"]) == str(kelas):
+            j["Rating"] = 10
 
 with open("pick_order.json", "r") as file:
     pick_order = json.load(file)
