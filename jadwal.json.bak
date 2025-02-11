@@ -1,0 +1,502 @@
+{
+  "PAA": [
+    {
+      "Kode": "A",
+      "Nama Dosen": "Rully Soelaiman, S.Kom., M.Kom.",
+      "Inisial": "RL",
+      "Hari": 2,
+      "Jam": 1,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "B",
+      "Nama Dosen": "Rully Soelaiman, S.Kom., M.Kom.",
+      "Inisial": "RL",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "C",
+      "Nama Dosen": "Wijayanti Nurul Khotimah, S.Kom., M.Sc",
+      "Inisial": "WN",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 8,
+      "Rating": 8
+    },
+    {
+      "Kode": "D",
+      "Nama Dosen": "Misbakhul Munir Irfan Subakti, S.Kom., M.Sc.",
+      "Inisial": "IS",
+      "Hari": 3,
+      "Jam": 1,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "E",
+      "Nama Dosen": "Wijayanti Nurul Khotimah, S.Kom., M.Sc",
+      "Inisial": "WN",
+      "Hari": 3,
+      "Jam": 2,
+      "Default Rating": 8,
+      "Rating": 8
+    },
+    {
+      "Kode": "F",
+      "Nama Dosen": "Rully Soelaiman, S.Kom., M.Kom.",
+      "Inisial": "RL",
+      "Hari": 3,
+      "Jam": 3,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "G",
+      "Nama Dosen": "Misbakhul Munir Irfan Subakti, S.Kom., M.Sc.",
+      "Inisial": "IS",
+      "Hari": 3,
+      "Jam": 4,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "H",
+      "Nama Dosen": "Misbakhul Munir Irfan Subakti, S.Kom., M.Sc.",
+      "Inisial": "IS",
+      "Hari": 4,
+      "Jam": 1,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "K",
+      "Nama Dosen": "Misbakhul Munir Irfan Subakti, S.Kom., M.Sc.",
+      "Inisial": "IS",
+      "Hari": 4,
+      "Jam": 2,
+      "Default Rating": 0,
+      "Rating": 0
+    }
+  ],
+  "ProgJar": [
+    {
+      "Kode": "A",
+      "Nama Dosen": "Hudan Studiawan, S.Kom, M.Kom",
+      "Inisial": "HS",
+      "Hari": 1,
+      "Jam": 2,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "B",
+      "Nama Dosen": "Hudan Studiawan, S.Kom, M.Kom",
+      "Inisial": "HS",
+      "Hari": 1,
+      "Jam": 3,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "C",
+      "Nama Dosen": "Dr. Eng. Royyana Muslim I, S.Kom, M.Kom",
+      "Inisial": "RM",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "D",
+      "Nama Dosen": "Dr. Eng. Royyana Muslim I, S.Kom, M.Kom",
+      "Inisial": "RM",
+      "Hari": 3,
+      "Jam": 1,
+      "Default Rating": 7,
+      "Rating": 7
+    },
+    {
+      "Kode": "E",
+      "Nama Dosen": "Moch. Nafkhan Alzamzami, S.T, M.T",
+      "Inisial": "NZ",
+      "Hari": 3,
+      "Jam": 4,
+      "Default Rating": 5,
+      "Rating": 5
+    }
+  ],
+  "MBD": [
+    {
+      "Kode": "A",
+      "Nama Dosen": "Adhatus Solichah A., S.Kom., M.Sc.",
+      "Inisial": "AL",
+      "Hari": 1,
+      "Jam": 2,
+      "Default Rating": 2,
+      "Rating": 2
+    },
+    {
+      "Kode": "B",
+      "Nama Dosen": "Shintami, PhD",
+      "Inisial": "SC",
+      "Hari": 1,
+      "Jam": 3,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "C",
+      "Nama Dosen": "Kelly Rosa Sungkono",
+      "Inisial": "KR",
+      "Hari": 1,
+      "Jam": 3,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "D",
+      "Nama Dosen": "Kelly Rosa Sungkono",
+      "Inisial": "KR",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "E",
+      "Nama Dosen": "Adhatus Solichah A., S.Kom., M.Sc.",
+      "Inisial": "AL",
+      "Hari": 2,
+      "Jam": 3,
+      "Default Rating": 2,
+      "Rating": 2
+    },
+    {
+      "Kode": "F",
+      "Nama Dosen": "Shintami, PhD",
+      "Inisial": "SC",
+      "Hari": 2,
+      "Jam": 3,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "G",
+      "Nama Dosen": "Imam Kuswardayan, S.Kom., M.T.",
+      "Inisial": "IM",
+      "Hari": 3,
+      "Jam": 3,
+      "Default Rating": 5,
+      "Rating": 5
+    }
+  ],
+  "PM": [
+    {
+      "Kode": "A",
+      "Nama Dosen": "Bu Dini + Pak Aldi",
+      "Inisial": "DA - AI",
+      "Hari": 1,
+      "Jam": 2,
+      "Default Rating": 6,
+      "Rating": 6
+    },
+    {
+      "Kode": "B",
+      "Nama Dosen": "Bu Dini + Pak Imam Mustafa Kamal",
+      "Inisial": "DA - MK",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 2,
+      "Rating": 2
+    },
+    {
+      "Kode": "C",
+      "Nama Dosen": "Bu Nanik Suciati + Pak Aldi",
+      "Inisial": "NS-AI",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "D",
+      "Nama Dosen": "Bu Dini + Pak Aldi",
+      "Inisial": "DA - AI",
+      "Hari": 2,
+      "Jam": 3,
+      "Default Rating": 6,
+      "Rating": 6
+    },
+    {
+      "Kode": "E",
+      "Nama Dosen": "Bu Chastine",
+      "Inisial": "CF",
+      "Hari": 2,
+      "Jam": 3,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "F",
+      "Nama Dosen": "Bu Dini",
+      "Inisial": "DA",
+      "Hari": 3,
+      "Jam": 1,
+      "Default Rating": 4,
+      "Rating": 4
+    },
+    {
+      "Kode": "G",
+      "Nama Dosen": "Bu Handayani",
+      "Inisial": "HT",
+      "Hari": 3,
+      "Jam": 2,
+      "Default Rating": 5,
+      "Rating": 5
+    },
+    {
+      "Kode": "H",
+      "Nama Dosen": "Bu Dini + Pak Aldi",
+      "Inisial": "DA-AI",
+      "Hari": 3,
+      "Jam": 3,
+      "Default Rating": 6,
+      "Rating": 6
+    }
+  ],
+  "Probstat": [
+    {
+      "Kode": "A",
+      "Nama Dosen": "Bu Bilqis + Pak Ilham",
+      "Inisial": "BA - IG",
+      "Hari": 1,
+      "Jam": 2,
+      "Default Rating": 7,
+      "Rating": 7
+    },
+    {
+      "Kode": "B",
+      "Nama Dosen": "Bu Bilqis + Pak Ilham",
+      "Inisial": "BA - IG",
+      "Hari": 1,
+      "Jam": 3,
+      "Default Rating": 7,
+      "Rating": 7
+    },
+    {
+      "Kode": "C",
+      "Nama Dosen": "Pak Ary + Pak Hilmi",
+      "Inisial": "AS - HM",
+      "Hari": 3,
+      "Jam": 2,
+      "Default Rating": 6,
+      "Rating": 6
+    },
+    {
+      "Kode": "D",
+      "Nama Dosen": "Pak Joko Lianto",
+      "Inisial": "JL",
+      "Hari": 3,
+      "Jam": 3,
+      "Default Rating": 5,
+      "Rating": 5
+    },
+    {
+      "Kode": "E",
+      "Nama Dosen": "Pak Saikhu",
+      "Inisial": "AS",
+      "Hari": 3,
+      "Jam": 1,
+      "Default Rating": 2,
+      "Rating": 2
+    },
+    {
+      "Kode": "F",
+      "Nama Dosen": "Pak Joko Lianto",
+      "Inisial": "JL",
+      "Hari": 3,
+      "Jam": 4,
+      "Default Rating": 5,
+      "Rating": 5
+    },
+    {
+      "Kode": "G",
+      "Nama Dosen": "Bu Bilqis + Pak Hilmi",
+      "Inisial": "BA - HM",
+      "Hari": 4,
+      "Jam": 2,
+      "Default Rating": 7,
+      "Rating": 7
+    },
+    {
+      "Kode": "H",
+      "Nama Dosen": "Bu Bilqis + Pak Hilmi",
+      "Inisial": "BA - HM",
+      "Hari": 4,
+      "Jam": 4,
+      "Default Rating": 7,
+      "Rating": 7
+    }
+  ],
+  "Otomata": [
+    {
+      "Kode": "A",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 1,
+      "Jam": 1,
+      "Default Rating": 7,
+      "Rating": 7
+    },
+    {
+      "Kode": "B",
+      "Nama Dosen": "Victor Hariadi, S.Si, M.Kom",
+      "Inisial": "VH",
+      "Hari": 1,
+      "Jam": 2,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "C",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 1,
+      "Jam": 2,
+      "Default Rating": 7,
+      "Rating": 7
+    },
+    {
+      "Kode": "D",
+      "Nama Dosen": "Victor Hariadi, S.Si, M.Kom",
+      "Inisial": "VH",
+      "Hari": 1,
+      "Jam": 3,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "E",
+      "Nama Dosen": "Bilqis + Pak Ilham",
+      "Inisial": "BA-IG",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 7,
+      "Rating": 7
+    },
+    {
+      "Kode": "F",
+      "Nama Dosen": "Victor + Hilmil",
+      "Inisial": "VH-HM",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "G",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 3,
+      "Jam": 1,
+      "Default Rating": 7,
+      "Rating": 7
+    },
+    {
+      "Kode": "H",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 2,
+      "Jam": 1,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "K",
+      "Nama Dosen": "Arya YudhiWijaya, S.Kom.,M.Kom.",
+      "Inisial": "AW",
+      "Hari": 4,
+      "Jam": 2,
+      "Default Rating": 7,
+      "Rating": 7
+    }
+  ],
+  "PPL": [
+    {
+      "Kode": "A",
+      "Nama Dosen": "Pak Bintang",
+      "Inisial": "BN",
+      "Hari": 2,
+      "Jam": 1,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "B",
+      "Nama Dosen": "Sarwosri, S.Kom. M.T",
+      "Inisial": "SR",
+      "Hari": 2,
+      "Jam": 2,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "C",
+      "Nama Dosen": "Sarwosri, S.Kom. M.T",
+      "Inisial": "SR",
+      "Hari": 2,
+      "Jam": 3,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "D",
+      "Nama Dosen": "Pak Bintang",
+      "Inisial": "BN",
+      "Hari": 3,
+      "Jam": 1,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "E",
+      "Nama Dosen": "Sarwosri, S.Kom. M.T",
+      "Inisial": "SR",
+      "Hari": 3,
+      "Jam": 2,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "F",
+      "Nama Dosen": "Sarwosri, S.Kom. M.T",
+      "Inisial": "SR",
+      "Hari": 3,
+      "Jam": 3,
+      "Default Rating": 10,
+      "Rating": 10
+    },
+    {
+      "Kode": "G",
+      "Nama Dosen": "Daniel O. Siahaan, S.Kom. M,Sc, PD.Eng",
+      "Inisial": "DO",
+      "Hari": 4,
+      "Jam": 3,
+      "Default Rating": 0,
+      "Rating": 0
+    },
+    {
+      "Kode": "H",
+      "Nama Dosen": "Pak Bintang",
+      "Inisial": "BN",
+      "Hari": 4,
+      "Jam": 3,
+      "Default Rating": 10,
+      "Rating": 10
+    }
+  ]
+}
