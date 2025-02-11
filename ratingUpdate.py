@@ -2,13 +2,16 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 import json
-import pprint
+import os
+from dotenv import load_dotenv
 
 url = "https://akademik.its.ac.id/list_frs.php"
 
 # use login credential
+load_dotenv()
+
 session = requests.Session()
-session.cookies.setdefault('PHPSESSID', 'bp3lnsblia0co30pascc756gd2')
+session.cookies.setdefault('PHPSESSID', os.getenv("TOKEN"))
 
 # get data
 response = session.get(url)
@@ -29,6 +32,21 @@ for matkul in matkul_depart:
     dataMK['ketersediaan'].append(raw[-1])
 
 dataMK = pd.DataFrame(dataMK)
+
+otherrows = soup.find_all('table', class_='GridStyle')
+matkul_terambil = otherrows[0].find_all('tr', valign='top')
+
+dataMKsendiri = {'kode': [], 'nama_mk': [], 'sks': [], 'kelas': [], 'alih_kredit': []}
+
+for matkul in matkul_terambil:
+    raw = [td.text for td in matkul.find_all('td')]
+    dataMKsendiri['kode'].append(raw[0])
+    dataMKsendiri['nama_mk'].append(raw[1])
+    dataMKsendiri['sks'].append(raw[2])
+    dataMKsendiri['kelas'].append(raw[3])
+    dataMKsendiri['alih_kredit'].append(raw[4])
+
+dataMKsendiri = pd.DataFrame(dataMKsendiri)
 
 # data matakuliah sem 4
 courses = [
@@ -74,6 +92,18 @@ for i, abbr in enumerate(abbreviation):
 
                 j["Jumlah Murid"] = murid_skrg
                 j["Max Murid"] = max_murid
+
+for matkul in dataMKsendiri.iterrows():
+    matkul = matkul[1]
+    nama_mk = matkul["nama_mk"]
+    if nama_mk not in courses:
+        continue
+    abbr = abbreviation[courses.index(nama_mk)]
+    kelas = matkul["kelas"]
+
+    for j in json_data[abbr]:
+        if j["Kode"] == kelas:
+            j["Rating"] = 0
 
 with open('jadwal.json', 'w') as file:
     json.dump(json_data, file, indent=2)

@@ -1,11 +1,12 @@
 #include <bits/stdc++.h>
 
+#include <algorithm>
 #include <nlohmann/json.hpp>
 
 typedef long long ll;
 
 bool validate_pick(
-  std::string pick, const std::array<std::string, 7> & pick_order, const nlohmann::json & jadwal)
+  std::string pick, const std::vector<std::string> & pick_order, const nlohmann::json & jadwal)
 {
   if (pick.size() == 0) {
     return true;
@@ -30,8 +31,14 @@ bool validate_pick(
 
     int hari_kelas = kelas.value().at("Hari").get<int>();
     int jam_kelas = kelas.value().at("Jam").get<int>();
+    int jumlah_murid = kelas.value().at("Jumlah Murid").get<int>();
+    int max_murid = kelas.value().at("Max Murid").get<int>();
 
     if (hari == hari_kelas && jam == jam_kelas) {
+      return false;
+    }
+
+    if (jumlah_murid == max_murid) {
       return false;
     }
   }
@@ -40,7 +47,7 @@ bool validate_pick(
 }
 
 std::pair<std::string, int> backtrack(std::string pick, int val, int i,
-  const std::array<std::string, 7> & pick_order, const nlohmann::json & jadwal)
+  const std::vector<std::string> & pick_order, const nlohmann::json & jadwal)
 {
   if (i >= pick_order.size()) {
     return std::make_pair(pick, val);
@@ -68,7 +75,7 @@ std::pair<std::string, int> backtrack(std::string pick, int val, int i,
   return best;
 }
 
-void frs_solver(const std::array<std::string, 7> & pick_order)
+void frs_solver(const std::vector<std::string> & pick_order)
 {
   std::ifstream ifs("jadwal.json");
   nlohmann::json jadwal = nlohmann::json::parse(ifs);
@@ -95,6 +102,18 @@ void frs_solver(const std::array<std::string, 7> & pick_order)
   std::cout << "Max Rating : " << result.second << std::endl;
 }
 
+void update_pick_order(std::vector<std::string> & pick_order)
+{
+  std::ifstream ifs("pick_order.json");
+  nlohmann::json json_order = nlohmann::json::parse(ifs);
+  ifs.close();
+
+  pick_order.clear();
+  for (const auto & item : json_order) {
+    pick_order.push_back(item.get<std::string>());
+  }
+}
+
 int main(int argc, char ** argv)
 {
   if (argc < 2) {
@@ -102,10 +121,10 @@ int main(int argc, char ** argv)
     return -1;
   }
 
-  std::array<std::string, 7> pick_order = {
-    "PAA", "ProgJar", "MBD", "PM", "Probstat", "Otomata", "PPL"};
+  std::vector<std::string> pick_order;
 
   if (std::stoi(argv[1]) == 0) {
+    update_pick_order(pick_order);
     frs_solver(pick_order);
     return 0;
   }
@@ -113,6 +132,7 @@ int main(int argc, char ** argv)
   while (true) {
     auto start = std::chrono::high_resolution_clock::now();
 
+    update_pick_order(pick_order);
     frs_solver(pick_order);
 
     auto stop = std::chrono::high_resolution_clock::now();
@@ -122,6 +142,8 @@ int main(int argc, char ** argv)
     std::cout << std::endl;
 
     auto sleep_duration = std::chrono::milliseconds(std::stoi(argv[1])) - duration;
-    std::this_thread::sleep_for(sleep_duration);
+    if (sleep_duration.count() > 0) {
+      std::this_thread::sleep_for(sleep_duration);
+    }
   }
 }
