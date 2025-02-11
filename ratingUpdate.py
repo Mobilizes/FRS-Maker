@@ -69,6 +69,16 @@ abbreviation = [
     "PPL"
 ]
 
+abbrandcourse = {
+    "ProgJar": "Pemrograman Jaringan",
+    "Probstat": "Probabilitas dan Statistik",
+    "Otomata": "Otomata",
+    "MBD": "Manajemen Basis Data",
+    "PAA": "Perancangan dan Analisis Algoritma",
+    "PM": "Pembelajaran Mesin",
+    "PPL": "Perancangan Perangkat Lunak"
+}
+
 pd.set_option('display.max_rows', None)
 
 pattern = '|'.join(courses)
@@ -88,7 +98,7 @@ for i, abbr in enumerate(abbreviation):
 
         for j in json_data[abbr]:
             if j["Kode"] == kelas:
-                j["Rating"] = 0 if murid_skrg == max_murid else j["Default Rating"]
+                j["Rating"] = 0 if murid_skrg >= max_murid - 1 else j["Default Rating"]
 
                 j["Jumlah Murid"] = murid_skrg
                 j["Max Murid"] = max_murid
@@ -105,5 +115,13 @@ for matkul in dataMKsendiri.iterrows():
         if j["Kode"] == kelas:
             j["Rating"] = 0
 
+with open("pick_order.json", "r") as file:
+    pick_order = json.load(file)
+
+reordered_json_data = {}
+for abbr in pick_order:
+    if abbr in json_data:
+        reordered_json_data[abbr] = json_data[abbr]
+
 with open('jadwal.json', 'w') as file:
-    json.dump(json_data, file, indent=2)
+    json.dump(reordered_json_data, file, indent=2)

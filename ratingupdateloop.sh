@@ -1,10 +1,13 @@
 #!/usr/bin/bash
 
-x=1
-
 while true; do
   python3 ratingUpdate.py
-  echo "Updated : $x"
-  x=$((x + 1))
-  sleep 10
+  printf '\033[3J'
+  jq -r '
+    to_entries[] 
+    | ("\n" + .key),
+      (.value[] | [.Kode, ."Nama Dosen", ."Jumlah Murid", ."Max Murid"] | @tsv)
+  ' jadwal.json | column -t -s $'\t'
+  date
+  sleep 15
 done

@@ -7,7 +7,9 @@
       "Hari": 2,
       "Jam": 1,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 0,
+      "Max Murid": 30
     },
     {
       "Kode": "B",
@@ -16,7 +18,9 @@
       "Hari": 2,
       "Jam": 2,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 0,
+      "Max Murid": 30
     },
     {
       "Kode": "C",
@@ -25,7 +29,9 @@
       "Hari": 2,
       "Jam": 2,
       "Default Rating": 8,
-      "Rating": 8
+      "Rating": 8,
+      "Jumlah Murid": 8,
+      "Max Murid": 30
     },
     {
       "Kode": "D",
@@ -34,7 +40,9 @@
       "Hari": 3,
       "Jam": 1,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     },
     {
       "Kode": "E",
@@ -43,7 +51,9 @@
       "Hari": 3,
       "Jam": 2,
       "Default Rating": 8,
-      "Rating": 8
+      "Rating": 0,
+      "Jumlah Murid": 28,
+      "Max Murid": 30
     },
     {
       "Kode": "F",
@@ -52,7 +62,9 @@
       "Hari": 3,
       "Jam": 3,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 0,
+      "Max Murid": 30
     },
     {
       "Kode": "G",
@@ -61,7 +73,9 @@
       "Hari": 3,
       "Jam": 4,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     },
     {
       "Kode": "H",
@@ -70,7 +84,9 @@
       "Hari": 4,
       "Jam": 1,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     },
     {
       "Kode": "K",
@@ -79,7 +95,9 @@
       "Hari": 4,
       "Jam": 2,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     }
   ],
   "ProgJar": [
@@ -90,7 +108,9 @@
       "Hari": 1,
       "Jam": 2,
       "Default Rating": 10,
-      "Rating": 10
+      "Rating": 10,
+      "Jumlah Murid": 56,
+      "Max Murid": 70
     },
     {
       "Kode": "B",
@@ -99,7 +119,9 @@
       "Hari": 1,
       "Jam": 3,
       "Default Rating": 10,
-      "Rating": 10
+      "Rating": 10,
+      "Jumlah Murid": 65,
+      "Max Murid": 70
     },
     {
       "Kode": "C",
@@ -107,8 +129,10 @@
       "Inisial": "RM",
       "Hari": 2,
       "Jam": 2,
-      "Default Rating": 0,
-      "Rating": 0
+      "Default Rating": 4,
+      "Rating": 0,
+      "Jumlah Murid": 70,
+      "Max Murid": 70
     },
     {
       "Kode": "D",
@@ -116,8 +140,10 @@
       "Inisial": "RM",
       "Hari": 3,
       "Jam": 1,
-      "Default Rating": 7,
-      "Rating": 7
+      "Default Rating": 10,
+      "Rating": 10,
+      "Jumlah Murid": 40,
+      "Max Murid": 70
     },
     {
       "Kode": "E",
@@ -126,7 +152,9 @@
       "Hari": 3,
       "Jam": 4,
       "Default Rating": 5,
-      "Rating": 5
+      "Rating": 5,
+      "Jumlah Murid": 8,
+      "Max Murid": 70
     }
   ],
   "MBD": [
@@ -137,7 +165,9 @@
       "Hari": 1,
       "Jam": 2,
       "Default Rating": 2,
-      "Rating": 2
+      "Rating": 2,
+      "Jumlah Murid": 4,
+      "Max Murid": 30
     },
     {
       "Kode": "B",
@@ -146,7 +176,9 @@
       "Hari": 1,
       "Jam": 3,
       "Default Rating": 10,
-      "Rating": 10
+      "Rating": 10,
+      "Jumlah Murid": 2,
+      "Max Murid": 30
     },
     {
       "Kode": "C",
@@ -155,7 +187,9 @@
       "Hari": 1,
       "Jam": 3,
       "Default Rating": 10,
-      "Rating": 10
+      "Rating": 10,
+      "Jumlah Murid": 4,
+      "Max Murid": 30
     },
     {
       "Kode": "D",
@@ -163,8 +197,10 @@
       "Inisial": "KR",
       "Hari": 2,
       "Jam": 2,
-      "Default Rating": 10,
-      "Rating": 10
+      "Default Rating": 7,
+      "Rating": 7,
+      "Jumlah Murid": 13,
+      "Max Murid": 30
     },
     {
       "Kode": "E",
@@ -173,7 +209,9 @@
       "Hari": 2,
       "Jam": 3,
       "Default Rating": 2,
-      "Rating": 2
+      "Rating": 2,
+      "Jumlah Murid": 0,
+      "Max Murid": 30
     },
     {
       "Kode": "F",
@@ -182,7 +220,9 @@
       "Hari": 2,
       "Jam": 3,
       "Default Rating": 10,
-      "Rating": 10
+      "Rating": 10,
+      "Jumlah Murid": 1,
+      "Max Murid": 30
     },
     {
       "Kode": "G",
@@ -191,7 +231,9 @@
       "Hari": 3,
       "Jam": 3,
       "Default Rating": 5,
-      "Rating": 5
+      "Rating": 5,
+      "Jumlah Murid": 1,
+      "Max Murid": 30
     }
   ],
   "PM": [
@@ -202,7 +244,9 @@
       "Hari": 1,
       "Jam": 2,
       "Default Rating": 6,
-      "Rating": 6
+      "Rating": 0,
+      "Jumlah Murid": 28,
+      "Max Murid": 30
     },
     {
       "Kode": "B",
@@ -210,8 +254,10 @@
       "Inisial": "DA - MK",
       "Hari": 2,
       "Jam": 2,
-      "Default Rating": 2,
-      "Rating": 2
+      "Default Rating": 0,
+      "Rating": 0,
+      "Jumlah Murid": 4,
+      "Max Murid": 30
     },
     {
       "Kode": "C",
@@ -220,7 +266,9 @@
       "Hari": 2,
       "Jam": 2,
       "Default Rating": 10,
-      "Rating": 10
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     },
     {
       "Kode": "D",
@@ -229,7 +277,9 @@
       "Hari": 2,
       "Jam": 3,
       "Default Rating": 6,
-      "Rating": 6
+      "Rating": 6,
+      "Jumlah Murid": 16,
+      "Max Murid": 30
     },
     {
       "Kode": "E",
@@ -238,7 +288,9 @@
       "Hari": 2,
       "Jam": 3,
       "Default Rating": 10,
-      "Rating": 10
+      "Rating": 0,
+      "Jumlah Murid": 29,
+      "Max Murid": 30
     },
     {
       "Kode": "F",
@@ -247,7 +299,9 @@
       "Hari": 3,
       "Jam": 1,
       "Default Rating": 4,
-      "Rating": 4
+      "Rating": 4,
+      "Jumlah Murid": 19,
+      "Max Murid": 30
     },
     {
       "Kode": "G",
@@ -255,8 +309,10 @@
       "Inisial": "HT",
       "Hari": 3,
       "Jam": 2,
-      "Default Rating": 5,
-      "Rating": 5
+      "Default Rating": 2,
+      "Rating": 2,
+      "Jumlah Murid": 5,
+      "Max Murid": 30
     },
     {
       "Kode": "H",
@@ -265,7 +321,9 @@
       "Hari": 3,
       "Jam": 3,
       "Default Rating": 6,
-      "Rating": 6
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     }
   ],
   "Probstat": [
@@ -276,7 +334,9 @@
       "Hari": 1,
       "Jam": 2,
       "Default Rating": 7,
-      "Rating": 7
+      "Rating": 7,
+      "Jumlah Murid": 24,
+      "Max Murid": 30
     },
     {
       "Kode": "B",
@@ -285,7 +345,9 @@
       "Hari": 1,
       "Jam": 3,
       "Default Rating": 7,
-      "Rating": 7
+      "Rating": 0,
+      "Jumlah Murid": 28,
+      "Max Murid": 30
     },
     {
       "Kode": "C",
@@ -294,7 +356,9 @@
       "Hari": 3,
       "Jam": 2,
       "Default Rating": 6,
-      "Rating": 6
+      "Rating": 6,
+      "Jumlah Murid": 8,
+      "Max Murid": 30
     },
     {
       "Kode": "D",
@@ -303,7 +367,9 @@
       "Hari": 3,
       "Jam": 3,
       "Default Rating": 5,
-      "Rating": 5
+      "Rating": 5,
+      "Jumlah Murid": 1,
+      "Max Murid": 30
     },
     {
       "Kode": "E",
@@ -312,7 +378,9 @@
       "Hari": 3,
       "Jam": 1,
       "Default Rating": 2,
-      "Rating": 2
+      "Rating": 2,
+      "Jumlah Murid": 2,
+      "Max Murid": 30
     },
     {
       "Kode": "F",
@@ -321,7 +389,9 @@
       "Hari": 3,
       "Jam": 4,
       "Default Rating": 5,
-      "Rating": 5
+      "Rating": 5,
+      "Jumlah Murid": 2,
+      "Max Murid": 30
     },
     {
       "Kode": "G",
@@ -330,7 +400,9 @@
       "Hari": 4,
       "Jam": 2,
       "Default Rating": 7,
-      "Rating": 7
+      "Rating": 7,
+      "Jumlah Murid": 2,
+      "Max Murid": 30
     },
     {
       "Kode": "H",
@@ -339,7 +411,9 @@
       "Hari": 4,
       "Jam": 4,
       "Default Rating": 7,
-      "Rating": 7
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     }
   ],
   "Otomata": [
@@ -350,7 +424,9 @@
       "Hari": 1,
       "Jam": 1,
       "Default Rating": 7,
-      "Rating": 7
+      "Rating": 7,
+      "Jumlah Murid": 20,
+      "Max Murid": 30
     },
     {
       "Kode": "B",
@@ -358,8 +434,10 @@
       "Inisial": "VH",
       "Hari": 1,
       "Jam": 2,
-      "Default Rating": 0,
-      "Rating": 0
+      "Default Rating": 10,
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     },
     {
       "Kode": "C",
@@ -368,7 +446,9 @@
       "Hari": 1,
       "Jam": 2,
       "Default Rating": 7,
-      "Rating": 7
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     },
     {
       "Kode": "D",
@@ -376,8 +456,10 @@
       "Inisial": "VH",
       "Hari": 1,
       "Jam": 3,
-      "Default Rating": 0,
-      "Rating": 0
+      "Default Rating": 10,
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     },
     {
       "Kode": "E",
@@ -385,8 +467,10 @@
       "Inisial": "BA-IG",
       "Hari": 2,
       "Jam": 2,
-      "Default Rating": 7,
-      "Rating": 7
+      "Default Rating": 4,
+      "Rating": 4,
+      "Jumlah Murid": 2,
+      "Max Murid": 30
     },
     {
       "Kode": "F",
@@ -394,8 +478,10 @@
       "Inisial": "VH-HM",
       "Hari": 2,
       "Jam": 2,
-      "Default Rating": 0,
-      "Rating": 0
+      "Default Rating": 10,
+      "Rating": 0,
+      "Jumlah Murid": 30,
+      "Max Murid": 30
     },
     {
       "Kode": "G",
@@ -404,7 +490,9 @@
       "Hari": 3,
       "Jam": 1,
       "Default Rating": 7,
-      "Rating": 7
+      "Rating": 7,
+      "Jumlah Murid": 0,
+      "Max Murid": 30
     },
     {
       "Kode": "H",
@@ -413,7 +501,9 @@
       "Hari": 2,
       "Jam": 1,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 5,
+      "Max Murid": 30
     },
     {
       "Kode": "K",
@@ -422,7 +512,9 @@
       "Hari": 4,
       "Jam": 2,
       "Default Rating": 7,
-      "Rating": 7
+      "Rating": 7,
+      "Jumlah Murid": 15,
+      "Max Murid": 30
     }
   ],
   "PPL": [
@@ -433,7 +525,9 @@
       "Hari": 2,
       "Jam": 1,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 37,
+      "Max Murid": 50
     },
     {
       "Kode": "B",
@@ -441,8 +535,10 @@
       "Inisial": "SR",
       "Hari": 2,
       "Jam": 2,
-      "Default Rating": 10,
-      "Rating": 10
+      "Default Rating": 7,
+      "Rating": 7,
+      "Jumlah Murid": 14,
+      "Max Murid": 50
     },
     {
       "Kode": "C",
@@ -450,8 +546,10 @@
       "Inisial": "SR",
       "Hari": 2,
       "Jam": 3,
-      "Default Rating": 10,
-      "Rating": 10
+      "Default Rating": 7,
+      "Rating": 7,
+      "Jumlah Murid": 8,
+      "Max Murid": 50
     },
     {
       "Kode": "D",
@@ -460,7 +558,9 @@
       "Hari": 3,
       "Jam": 1,
       "Default Rating": 10,
-      "Rating": 10
+      "Rating": 10,
+      "Jumlah Murid": 40,
+      "Max Murid": 50
     },
     {
       "Kode": "E",
@@ -468,8 +568,10 @@
       "Inisial": "SR",
       "Hari": 3,
       "Jam": 2,
-      "Default Rating": 10,
-      "Rating": 10
+      "Default Rating": 7,
+      "Rating": 0,
+      "Jumlah Murid": 48,
+      "Max Murid": 50
     },
     {
       "Kode": "F",
@@ -477,8 +579,10 @@
       "Inisial": "SR",
       "Hari": 3,
       "Jam": 3,
-      "Default Rating": 10,
-      "Rating": 10
+      "Default Rating": 7,
+      "Rating": 7,
+      "Jumlah Murid": 27,
+      "Max Murid": 50
     },
     {
       "Kode": "G",
@@ -487,7 +591,9 @@
       "Hari": 4,
       "Jam": 3,
       "Default Rating": 0,
-      "Rating": 0
+      "Rating": 0,
+      "Jumlah Murid": 4,
+      "Max Murid": 50
     },
     {
       "Kode": "H",
@@ -496,7 +602,9 @@
       "Hari": 4,
       "Jam": 3,
       "Default Rating": 10,
-      "Rating": 10
+      "Rating": 10,
+      "Jumlah Murid": 25,
+      "Max Murid": 50
     }
   ]
 }

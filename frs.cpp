@@ -46,6 +46,16 @@ bool validate_pick(
   return true;
 }
 
+struct Comparator {
+  bool operator()(
+    const std::pair<std::string, int> & a, const std::pair<std::string, int> & b) const
+  {
+    return a.second > b.second;
+  }
+};
+
+std::set<std::pair<std::string, int>, Comparator> history;
+
 std::pair<std::string, int> backtrack(std::string pick, int val, int i,
   const std::vector<std::string> & pick_order, const nlohmann::json & jadwal)
 {
@@ -65,7 +75,7 @@ std::pair<std::string, int> backtrack(std::string pick, int val, int i,
   for (auto & [key, item] : jadwal.at(pick_order[i]).items()) {
     auto result = backtrack(pick + item.at("Kode").get<std::string>(),
       val + item.at("Rating").get<int>(), i + 1, pick_order, jadwal);
-    // std::cout << result.first << " " << result.second << std::endl;
+    history.insert(result);
 
     if (result.second > best.second) {
       best = result;
@@ -75,13 +85,19 @@ std::pair<std::string, int> backtrack(std::string pick, int val, int i,
   return best;
 }
 
-void frs_solver(const std::vector<std::string> & pick_order)
+void frs_solver(const std::vector<std::string> & pick_order, bool print_result)
 {
+  history.clear();
+
   std::ifstream ifs("jadwal.json");
   nlohmann::json jadwal = nlohmann::json::parse(ifs);
   ifs.close();
 
   auto result = backtrack("", 0, 0, pick_order, jadwal);
+
+  if (!print_result) {
+    return;
+  }
 
   for (auto i : pick_order) {
     std::cout << i << "\t";
@@ -125,7 +141,28 @@ int main(int argc, char ** argv)
 
   if (std::stoi(argv[1]) == 0) {
     update_pick_order(pick_order);
-    frs_solver(pick_order);
+    frs_solver(pick_order, false);
+
+    for (auto res : history) {
+      for (auto i : pick_order) {
+        std::cout << i << "\t";
+      }
+      std::cout << std::endl;
+
+      int index = 0;
+      for (auto i : res.first) {
+        std::cout << i << "\t";
+        for (int j = 8; j <= pick_order[index].size(); j += 8) {
+          std::cout << "\t";
+        }
+
+        index++;
+      }
+      std::cout << std::endl;
+
+      std::cout << "Max Rating : " << res.second << std::endl;
+    }
+
     return 0;
   }
 
@@ -133,7 +170,7 @@ int main(int argc, char ** argv)
     auto start = std::chrono::high_resolution_clock::now();
 
     update_pick_order(pick_order);
-    frs_solver(pick_order);
+    frs_solver(pick_order, true);
 
     auto stop = std::chrono::high_resolution_clock::now();
 
