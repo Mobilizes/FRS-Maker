@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 
 #include <nlohmann/json.hpp>
-#include <ostream>
 
 typedef long long ll;
 
@@ -69,13 +68,60 @@ std::pair<std::string, int> backtrack(std::string pick, int val, int i,
   return best;
 }
 
-int main()
+void frs_solver(const std::array<std::string, 7> & pick_order)
 {
   std::ifstream ifs("jadwal.json");
   nlohmann::json jadwal = nlohmann::json::parse(ifs);
-
-  std::array<std::string, 7> pick_order = {"PAA", "ProgJar", "MBD", "PM", "Probstat", "Otomata", "PPL"};
+  ifs.close();
 
   auto result = backtrack("", 0, 0, pick_order, jadwal);
-  std::cout << result.first << ' ' << result.second << std::endl;
+
+  for (auto i : pick_order) {
+    std::cout << i << "\t";
+  }
+  std::cout << std::endl;
+
+  int index = 0;
+  for (auto i : result.first) {
+    std::cout << i << "\t";
+    for (int j = 8; j <= pick_order[index].size(); j += 8) {
+      std::cout << "\t";
+    }
+
+    index++;
+  }
+  std::cout << std::endl;
+
+  std::cout << "Max Rating : " << result.second << std::endl;
+}
+
+int main(int argc, char ** argv)
+{
+  if (argc < 2) {
+    std::cerr << "Please input delay time (ms) (0 for one time output)" << std::endl;
+    return -1;
+  }
+
+  std::array<std::string, 7> pick_order = {
+    "PAA", "ProgJar", "MBD", "PM", "Probstat", "Otomata", "PPL"};
+
+  if (std::stoi(argv[1]) == 0) {
+    frs_solver(pick_order);
+    return 0;
+  }
+
+  while (true) {
+    auto start = std::chrono::high_resolution_clock::now();
+
+    frs_solver(pick_order);
+
+    auto stop = std::chrono::high_resolution_clock::now();
+
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+    std::cout << "FRS calculation took " << duration.count() << "ms" << std::endl;
+    std::cout << std::endl;
+
+    auto sleep_duration = std::chrono::milliseconds(std::stoi(argv[1])) - duration;
+    std::this_thread::sleep_for(sleep_duration);
+  }
 }
